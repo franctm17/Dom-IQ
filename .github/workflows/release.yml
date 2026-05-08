@@ -4,6 +4,12 @@ on:
   push:
     tags:
       - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag to release (e.g. v1.0.20)'
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -12,24 +18,34 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Resolve target tag
+        id: target
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "tag=${{ inputs.tag }}" >> $GITHUB_OUTPUT
+          else
+            echo "tag=${GITHUB_REF_NAME}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Checkout target tag
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: ${{ steps.target.outputs.tag }}
 
       - name: Get previous tag
         id: prev
         run: |
-          PREV=$(git describe --tags --abbrev=0 "${GITHUB_REF_NAME}^" 2>/dev/null || echo "")
+          PREV=$(git describe --tags --abbrev=0 "${{ steps.target.outputs.tag }}^" 2>/dev/null || echo "")
           echo "tag=$PREV" >> $GITHUB_OUTPUT
 
       - name: Build changelog
         id: changelog
         run: |
           if [ -n "${{ steps.prev.outputs.tag }}" ]; then
-            LOG=$(git log --pretty=format:'- %s' "${{ steps.prev.outputs.tag }}..${GITHUB_REF_NAME}")
+            LOG=$(git log --pretty=format:'- %s' "${{ steps.prev.outputs.tag }}..${{ steps.target.outputs.tag }}")
           else
-            LOG=$(git log --pretty=format:'- %s' "${GITHUB_REF_NAME}")
+            LOG=$(git log --pretty=format:'- %s' "${{ steps.target.outputs.tag }}")
           fi
           {
             echo "body<<EOF"
@@ -43,8 +59,8 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.ref_name }}
-          name: ${{ github.ref_name }}
+          tag_name: ${{ steps.target.outputs.tag }}
+          name: ${{ steps.target.outputs.tag }}
           body: ${{ steps.changelog.outputs.body }}
           files: |
             domiq.js
