@@ -1,4 +1,8 @@
-# 🏠 Dom-IQ
+<p align="center">
+  <img src="https://raw.githubusercontent.com/franctm17/Dom-IQ/main/logo.png" alt="Dom-IQ" width="220">
+</p>
+
+# Dom-IQ
 
 > La dashboard premium per Home Assistant: la tua casa in **3D** + energia, clima, sicurezza, robot, meteo e **qualsiasi card di Home Assistant** — tutto in un solo elemento Lovelace.
 
