@@ -28,12 +28,7 @@ jobs:
           # Testo in chiaro (niente parse_mode) → nessun problema di escaping con
           # i caratteri Markdown/emoji delle note. Telegram limita a 4096 caratteri.
           BODY=$(printf '%s' "$REL_BODY" | head -c 3500)
-          TEXT="🚀 Dom-IQ ${REL_TAG} è disponibile!
-
-${BODY}
-
-⬇️ Aggiorna da HACS (Dom-IQ) e ricarica la dashboard.
-🔗 ${REL_URL}"
+          TEXT=$(printf '🚀 Dom-IQ %s è disponibile!\n\n%s\n\n⬇️ Aggiorna da HACS (Dom-IQ) e ricarica la dashboard.\n🔗 %s' "$REL_TAG" "$BODY" "$REL_URL")
           # --data-urlencode gestisce a capo, spazi ed emoji in sicurezza
           curl -sS -X POST \
             "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
