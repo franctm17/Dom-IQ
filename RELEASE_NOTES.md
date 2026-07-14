@@ -1,9 +1,9 @@
-## Dom-IQ v1.3.96
+## Dom-IQ v1.3.97
 
-**Fix Dom-IQ Link — pacchetto sempre valido**
+**Dom-IQ Link — avviso se il chat id è sbagliato**
 
-- 🛠️ Il pacchetto generato poteva dare un errore YAML in Home Assistant (*"found character '@' that cannot start any token"*) quando il chat id era un `@nomecanale`, oppure quando un dispositivo non veniva rilevato (segnaposto). Ora il generatore **quota correttamente** il destinatario (numerico lasciato "nudo", `@canale`/segnaposto tra virgolette) e usa segnaposto sempre validi → il pacchetto si incolla e riavvia senza errori.
+- ⚠️ L'errore più comune nel collegare Telegram è mettere nel campo *"Il TUO chat id"* un **@nome** (il nome del bot o del canale) invece del **tuo numero**. In quel caso Home Assistant scarta i messaggi e l'assistente non risponde. Ora, se premi **Genera configurazione** con un valore che non è numerico, la card te lo segnala subito e ti spiega come ottenere il numero (scrivendo a **@userinfobot**).
 
-Se avevi già incollato la versione precedente: apri di nuovo **Impostazioni → Dom-IQ Link → Genera configurazione**, ricopia e sostituisci il file.
+Promemoria: il chat id è **il tuo numero personale** (es. `123456789`), e va messo sia nel campo della card sia negli *allowed chat ids* dell'integrazione Telegram Bot in HA.
 
 _Dom-IQ BETA_
