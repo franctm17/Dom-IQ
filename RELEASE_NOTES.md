@@ -1,9 +1,17 @@
-## Dom-IQ v1.3.94
+## Dom-IQ v1.3.95
 
-**Voce unica e affidabile + notifiche Telegram degli aggiornamenti**
+**🔗 Dom-IQ Link — la tua casa su Telegram. La svolta.**
 
-- 🔊 **Voce di risposta unificata**: dentro l'app Home Assistant la voce "Femminile" suonava comunque maschile (il motore Edge TTS del server ignora la voce richiesta per singola frase e usa il suo default Diego). Invece di una scelta che su alcuni server non funzionava, la card ora usa **un'unica voce maschile, naturale e senza ritardi**, uguale su tutti i dispositivi. Vuoi una voce diversa (anche femminile)? Attiva **ElevenLabs** con la tua chiave: sei libero di scegliere qualsiasi voce.
+Dom-IQ esce dalla dashboard e diventa tascabile. Da Impostazioni dell'assistente → nuova sezione **Dom-IQ Link**: metti il token del bot e il tuo chat id, scegli cosa vuoi, premi **Genera configurazione** e la card ti crea un pacchetto Home Assistant **già personalizzato con i tuoi dispositivi**. Lo incolli, riavvii, ed è fatto.
 
-- 📣 **Notifiche Telegram**: da ora ogni nuovo aggiornamento della card viene annunciato automaticamente sul canale Telegram, con le note di rilascio e il link.
+- **📱→🏠 L'assistente in tasca**: scrivi al bot da ovunque — *"accendi il salone"*, *"com'è la casa?"* — e la casa risponde ed esegue. È lo stesso cervello dell'assistente, raggiungibile da fuori.
+- **🏠→📱 La casa che ti anticipa** (con i pulsanti Sì/No):
+  - ☔ *Finestra aperta mentre piove* → "Chiudo la tapparella?"
+  - 🔒 *Sei uscito e l'allarme è disinserito* → "Lo attivo?"
+  - 📸 *Movimento rilevato* → foto della telecamera in chat
+  - ☀️ *Buongiorno digest* — meteo e stato casa ogni mattina
+- **Privato e a costo zero**: gira tutto sul TUO Home Assistant tramite l'integrazione Telegram nativa in *polling* → **nessuna porta aperta, HA non esposto a internet, nessun dato che passa da noi**.
 
-_Dom-IQ BETA_
+Il bello: nessuno saprebbe cablare tutto questo a mano. Dom-IQ te lo genera **su misura, in un clic**.
+
+_Dom-IQ BETA · Dom-IQ Link è in beta: dopo aver incollato il pacchetto, prova prima un comando di test._
