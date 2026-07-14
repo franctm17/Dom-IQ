@@ -1,0 +1,43 @@
+name: Notify Telegram on release
+
+# Ad ogni release PUBBLICATA manda un messaggio al canale Telegram con le note
+# di rilascio. Richiede due Secrets nel repo (Settings → Secrets and variables →
+# Actions):
+#   TELEGRAM_BOT_TOKEN  → token del bot creato con @BotFather
+#   TELEGRAM_CHAT_ID    → id del canale (es. @nomecanale oppure -100xxxxxxxxxx)
+on:
+  release:
+    types: [published]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Telegram message
+        env:
+          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TG_CHAT:  ${{ secrets.TELEGRAM_CHAT_ID }}
+          REL_TAG:  ${{ github.event.release.tag_name }}
+          REL_URL:  ${{ github.event.release.html_url }}
+          REL_BODY: ${{ github.event.release.body }}
+        run: |
+          if [ -z "$TG_TOKEN" ] || [ -z "$TG_CHAT" ]; then
+            echo "Secrets TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID mancanti: salto."
+            exit 0
+          fi
+          # Testo in chiaro (niente parse_mode) → nessun problema di escaping con
+          # i caratteri Markdown/emoji delle note. Telegram limita a 4096 caratteri.
+          BODY=$(printf '%s' "$REL_BODY" | head -c 3500)
+          TEXT="🚀 Dom-IQ ${REL_TAG} è disponibile!
+
+${BODY}
+
+⬇️ Aggiorna da HACS (Dom-IQ) e ricarica la dashboard.
+🔗 ${REL_URL}"
+          # --data-urlencode gestisce a capo, spazi ed emoji in sicurezza
+          curl -sS -X POST \
+            "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TG_CHAT}" \
+            --data-urlencode "text=${TEXT}" \
+            --data-urlencode "disable_web_page_preview=true" \
+            -o /dev/null -w "Telegram HTTP %{http_code}\n"
