@@ -1,10 +1,11 @@
-## Dom-IQ v1.3.105
+## Dom-IQ v1.3.106
 
-**Wake word e voce di risposta di nuovo funzionanti su mobile (ripristino)**
+**Diagnostica integrata: basta andare a tentoni**
 
-- ↩️ I miei ultimi tentativi di ridurre i falsi positivi e l'apertura sulla plancia sbagliata avevano **irrigidito troppo** il riconoscimento su mobile: la parola vera veniva rifiutata → wake che non partiva (e di conseguenza niente voce). Ho **ripristinato integralmente** la wake word alla versione che funzionava: attivazione e voce tornano a posto.
-- 🔑 Resta attiva la correzione della **licenza**: attivazione automatica su tutti i dispositivi dello stesso server e fix del "già attiva su un altro server" (il PC adotta automaticamente l'identità del server).
+- 🔧 **Nuovo comando "diagnostica"**: apri l'assistente, scrivi `diagnostica` e premi invio. La card mostra un report completo di QUESTO dispositivo: **versione realmente in esecuzione** (svela subito se l'app sta usando una cache vecchia — il motivo più comune per cui "gli aggiornamenti non cambiano nulla"), stato dell'impronta vocale e dello spotter (attivo/punteggi/soglia), stato dell'audio, motori TTS visti da HA, e sorgenti licenza (per confrontare due dispositivi dello stesso server).
+- 🏷️ **Versione visibile**: accanto al titolo "Dom-IQ Assistant" ora compare la versione in piccolo — a colpo d'occhio sai se il dispositivo è aggiornato.
+- 🎤 **Test wake guidato**: la diagnostica spiega come verificare in 30 secondi se lo spotter *sente* ma *non riconosce* (→ ri-registrare l'impronta) o *non sente affatto* (→ microfono/audio della app).
 
-Nota: i falsi positivi (attivazione su rumori/versi) possono tornare a presentarsi; per ridurli imposta **Sensibilità wake → Bassa** nelle impostazioni. Li affronteremo di nuovo, ma con calma e senza compromettere il funzionamento.
+📌 Se su un dispositivo i problemi "persistono nonostante gli aggiornamenti": quasi sempre la versione mostrata è vecchia → nell'app Home Assistant vai in *Impostazioni → App companion → Debug → Svuota cache frontend* (o cancella i dati dell'app) e riapri.
 
 _Dom-IQ BETA_
