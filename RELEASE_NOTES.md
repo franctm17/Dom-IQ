@@ -1,11 +1,9 @@
-## Dom-IQ v1.3.103
+## Dom-IQ v1.3.104
 
-**Licenza attiva su tutti i dispositivi in automatico + wake word più precisa su mobile**
+**Licenza: risolto "già attiva su un altro server" tra dispositivi dello stesso server + wake word di nuovo funzionante su mobile**
 
-- 🔑 **Attivazione automatica ovunque**: se attivi la licenza da un dispositivo, ora **tutti gli altri** (PC compreso, anche via DuckDNS) risultano attivi **da soli** — senza incollare nulla nel YAML. La card propaga la licenza a tutto il server tramite Home Assistant, anche quando la dashboard è in modalità YAML o l'utente non è amministratore (era il caso in cui "da mobile attiva, da PC no"). Ogni dispositivo attivo la mantiene viva per gli altri, anche dopo un riavvio.
-- 🔇 **Meno falsi positivi (versi) su mobile**: con l'impronta vocale registrata, ho reso più severi i filtri anti-rumore (dinamica e soglia di somiglianza) → i versi/rumori monotoni non attivano più l'assistente.
-- 📍 **Niente plancia "fantasma"**: l'assistente si apre sulla plancia che **stai davvero usando** (ora conta anche l'ultima plancia che hai toccato), mai su una dashboard rimasta in background.
-
-💡 Se hai ancora qualche attivazione di troppo, imposta la **Sensibilità wake** su *Bassa* nelle impostazioni: massima precisione.
+- 🔑 **"Licenza già attiva su un altro server" (stesso server, PC diverso) — risolto**: il PC non riusciva a riprodurre l'impronta del server (a cui è legata la licenza) e la scambiava per un altro server. Ora la card **propaga e adotta automaticamente l'identità del server** tra tutti i dispositivi tramite Home Assistant → l'impronta combacia ovunque e la licenza risulta attiva su ogni dispositivo, senza incollare nulla.
+  - Per applicarlo: aggiorna la card a v1.3.104 su **tutti** i dispositivi, **apri una volta** la dashboard sul dispositivo dove è già attiva (telefono), poi **ricarica sul PC** → risulterà attiva.
+- 🎙️ **Wake word su mobile di nuovo funzionante**: nell'ultima versione avevo reso i filtri troppo severi e la parola vera veniva rifiutata. Ripristinati i valori funzionanti. Per meno falsi positivi: imposta la **Sensibilità wake su "Bassa"** e, se serve, ri-registra l'impronta con 3 campioni puliti.
 
 _Dom-IQ BETA_
