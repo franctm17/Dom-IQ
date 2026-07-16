@@ -1,9 +1,8 @@
-## Dom-IQ v1.3.99
+## Dom-IQ v1.3.100
 
-**Fix Dom-IQ Link — nome del file del pacchetto valido per Home Assistant**
+**Dom-IQ Link — se usi già l'integrazione ufficiale Telegram Bot**
 
-- 🛠️ Home Assistant **non accetta i trattini** nel nome di un package: il file suggerito si chiamava `dom-iq-link.yaml` e HA lo scartava in blocco (*"invalid slug dom-iq-link, try dom_iq_link"*) → non si caricavano né il bot né le automazioni. Ora la card indica il nome corretto **`dom_iq_link.yaml`** (con underscore).
-
-Se avevi già creato il file: **rinominalo** in `dom_iq_link.yaml` e riavvia HA. Ricorda: **un solo** ricevitore Telegram deve essere attivo — o quello incluso nel pacchetto, o l'integrazione ufficiale "Telegram Bot", non entrambi (altrimenti vanno in conflitto).
+- ☑️ Nuova spunta **"Ho già l'integrazione ufficiale Telegram Bot"**: se attiva, il pacchetto generato **non include** più il blocco `telegram_bot:` (così non va in conflitto con l'integrazione) e contiene solo le automazioni.
+- 📡 Le istruzioni ora ricordano il requisito chiave: l'integrazione Telegram Bot deve essere in modalità **Polling** (non "Broadcast", che invia soltanto e non riceve i messaggi) e il tuo chat id dev'essere negli *allowed chat ids* — altrimenti l'assistente riceve i comandi ma non risponde.
 
 _Dom-IQ BETA_
