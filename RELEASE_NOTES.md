@@ -1,10 +1,11 @@
-## Dom-IQ v1.3.102
+## Dom-IQ v1.3.103
 
-**Wake word su mobile — meno falsi positivi e niente plancia "fantasma"**
+**Licenza attiva su tutti i dispositivi in automatico + wake word più precisa su mobile**
 
-- 🔇 **Basta attivazioni sui versi/rumori**: sul motore di riconoscimento del browser (usato quando non hai registrato l'impronta vocale) su mobile ora contano solo i risultati **definitivi** (le ipotesi parziali instabili facevano scattare la wake sui rumori) e con meno "ipotesi alternative". Inoltre un rumore trascritto come una frase lunga non sveglia più: la wake si pronuncia **da sola**.
-- 📍 **Niente apertura sulla plancia sbagliata**: se l'app è in secondo piano, o se la plancia scelta non è davvero quella che stai guardando, l'assistente **non si apre più** su una dashboard "fantasma".
+- 🔑 **Attivazione automatica ovunque**: se attivi la licenza da un dispositivo, ora **tutti gli altri** (PC compreso, anche via DuckDNS) risultano attivi **da soli** — senza incollare nulla nel YAML. La card propaga la licenza a tutto il server tramite Home Assistant, anche quando la dashboard è in modalità YAML o l'utente non è amministratore (era il caso in cui "da mobile attiva, da PC no"). Ogni dispositivo attivo la mantiene viva per gli altri, anche dopo un riavvio.
+- 🔇 **Meno falsi positivi (versi) su mobile**: con l'impronta vocale registrata, ho reso più severi i filtri anti-rumore (dinamica e soglia di somiglianza) → i versi/rumori monotoni non attivano più l'assistente.
+- 📍 **Niente plancia "fantasma"**: l'assistente si apre sulla plancia che **stai davvero usando** (ora conta anche l'ultima plancia che hai toccato), mai su una dashboard rimasta in background.
 
-💡 Per la massima precisione (e attivazione anche a mani libere su iPhone) resta consigliato registrare la tua voce con **🎯 Impara la mia voce** nelle impostazioni dell'assistente: il riconoscimento locale ha filtri anti-verso molto più forti.
+💡 Se hai ancora qualche attivazione di troppo, imposta la **Sensibilità wake** su *Bassa* nelle impostazioni: massima precisione.
 
 _Dom-IQ BETA_
