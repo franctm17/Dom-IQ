@@ -1,6 +1,7 @@
-## Dom-IQ v1.3.106
+## Dom-IQ v1.3.107
 
-- 🔧 Nuovo comando `diagnostica` nell'assistente (report dello stato voce/wake/licenza del dispositivo)
-- 🏷️ Versione della card visibile accanto al titolo dell'assistente
+- 💥 Fix crash del browser su PC con microfono attivo
+- 🎙️ Fix wake word che non sentiva su mobile
+- 🔊 Fix voce di risposta muta su mobile (con Google Translate TTS)
 
 _Dom-IQ BETA_
