@@ -1,5 +1,6 @@
-## Dom-IQ v1.3.108
+## Dom-IQ v1.3.109
 
-- 📍 Fix assistente che si apriva su un'altra plancia/finestra: ora si apre sempre su quella che stai guardando
+- 🎤 Fix ascolto comando dentro l'app HA: ora usa Whisper quando il browser non ha la dettatura
+- ℹ️ All'apertura l'assistente avvisa subito se manca qualcosa per voce/ascolto (Whisper/TTS/HTTPS)
 
 _Dom-IQ BETA_
