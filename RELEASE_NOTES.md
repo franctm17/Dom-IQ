@@ -1,7 +1,5 @@
-## Dom-IQ v1.3.107
+## Dom-IQ v1.3.108
 
-- 💥 Fix crash del browser su PC con microfono attivo
-- 🎙️ Fix wake word che non sentiva su mobile
-- 🔊 Fix voce di risposta muta su mobile (con Google Translate TTS)
+- 📍 Fix assistente che si apriva su un'altra plancia/finestra: ora si apre sempre su quella che stai guardando
 
 _Dom-IQ BETA_
