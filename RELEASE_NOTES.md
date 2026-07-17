@@ -1,7 +1,6 @@
-## Dom-IQ v1.3.114
+## Dom-IQ v1.3.115
 
-- 🎙️ Fix wake word "Dom" che non scattava (la trascrizione sente "don": ora è accettata)
-- 🔧 La diagnostica avvisa se l'impronta vocale è registrata per un'altra parola
-- 🔇 Fix wake che poteva restare sorda dopo una risposta vocale interrotta
+- 🎙️ Fix wake word composta ("Domiq") spezzata in due parole dalla trascrizione
+- 🎯 L'assistente avvisa subito se l'impronta vocale è registrata per un'altra parola (va ri-registrata dopo un cambio di wake word)
 
 _Dom-IQ BETA_
