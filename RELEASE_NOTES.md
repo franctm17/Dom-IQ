@@ -1,5 +1,6 @@
-## Dom-IQ v1.3.122
+## Dom-IQ v1.3.123
 
-- 🎙️ Fix wake word bloccata su mobile: la richiesta microfono poteva restare appesa; ora ha un timeout e riparte automaticamente al primo tocco sullo schermo
+- 🎙️ Wake word riscritta (Wake 2.0): usa il motore dell'ascolto su tutti i dispositivi — qualsiasi parola funziona subito, senza registrazioni
+- 🔇 Rimossa la registrazione vocale automatica al cambio parola (i "bip" in sottofondo)
 
 _Dom-IQ BETA_
