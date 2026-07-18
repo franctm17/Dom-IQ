@@ -1,6 +1,5 @@
-## Dom-IQ v1.3.120
+## Dom-IQ v1.3.121
 
-- 🎙️ Fix wake word con impronta che veniva erroneamente dirottata su Whisper al caricamento
-- 🎯 Cambiando wake word, la card avvia da sola la registrazione della voce: ogni parola funziona sempre col riconoscimento locale
+- 🎙️ Fix definitivo wake word con impronta ("Dom") su mobile: il rilevatore di sordità scambiava il silenzio per un guasto e spegneva lo spotter a ripetizione
 
 _Dom-IQ BETA_
