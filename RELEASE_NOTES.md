@@ -1,5 +1,6 @@
-## Dom-IQ v1.3.117
+## Dom-IQ v1.3.118
 
-- 🎙️ Fix wake word che non funzionava sulle altre plance con la stessa card (le impostazioni assistente ora si condividono tra card con lo stesso card_id)
+- 🎙️ Fix impostazioni assistente incoerenti tra plance con lo stesso card_id (ora vince sempre l'ultimo salvataggio)
+- 📍 Fix assistente della plancia precedente che restava attivo e rispondeva lui al cambio plancia
 
 _Dom-IQ BETA_
