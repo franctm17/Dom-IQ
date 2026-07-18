@@ -1,6 +1,5 @@
-## Dom-IQ v1.3.116
+## Dom-IQ v1.3.117
 
-- 🎙️ Fix wake word corte ("Dom") che non venivano proprio captate su mobile (soglie di rilevamento voce abbassate)
-- 🛟 In app, senza impronta vocale valida, la wake ora usa Whisper come riserva (prima restava spenta in silenzio)
+- 🎙️ Fix wake word che non funzionava sulle altre plance con la stessa card (le impostazioni assistente ora si condividono tra card con lo stesso card_id)
 
 _Dom-IQ BETA_
