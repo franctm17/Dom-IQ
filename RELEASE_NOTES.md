@@ -1,6 +1,6 @@
-## Dom-IQ v1.3.118
+## Dom-IQ v1.3.119
 
-- 🎙️ Fix impostazioni assistente incoerenti tra plance con lo stesso card_id (ora vince sempre l'ultimo salvataggio)
-- 📍 Fix assistente della plancia precedente che restava attivo e rispondeva lui al cambio plancia
+- 🎙️ Fix wake word con impronta ("Dom") che restava sorda su alcuni telefoni: ora passa da sola a Whisper se il microfono non dà segnale
+- 📍 Fix wake che non ripartiva sulle altre plance dopo un errore momentaneo
 
 _Dom-IQ BETA_
