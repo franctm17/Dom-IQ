@@ -1,6 +1,6 @@
-## Dom-IQ v1.3.115
+## Dom-IQ v1.3.116
 
-- 🎙️ Fix wake word composta ("Domiq") spezzata in due parole dalla trascrizione
-- 🎯 L'assistente avvisa subito se l'impronta vocale è registrata per un'altra parola (va ri-registrata dopo un cambio di wake word)
+- 🎙️ Fix wake word corte ("Dom") che non venivano proprio captate su mobile (soglie di rilevamento voce abbassate)
+- 🛟 In app, senza impronta vocale valida, la wake ora usa Whisper come riserva (prima restava spenta in silenzio)
 
 _Dom-IQ BETA_
