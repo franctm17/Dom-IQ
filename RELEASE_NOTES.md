@@ -1,6 +1,6 @@
-## Dom-IQ v1.3.119
+## Dom-IQ v1.3.120
 
-- 🎙️ Fix wake word con impronta ("Dom") che restava sorda su alcuni telefoni: ora passa da sola a Whisper se il microfono non dà segnale
-- 📍 Fix wake che non ripartiva sulle altre plance dopo un errore momentaneo
+- 🎙️ Fix wake word con impronta che veniva erroneamente dirottata su Whisper al caricamento
+- 🎯 Cambiando wake word, la card avvia da sola la registrazione della voce: ogni parola funziona sempre col riconoscimento locale
 
 _Dom-IQ BETA_
