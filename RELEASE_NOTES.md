@@ -1,6 +1,6 @@
-## Dom-IQ v1.3.123
+## Dom-IQ v1.3.124
 
-- 🎙️ Wake word riscritta (Wake 2.0): usa il motore dell'ascolto su tutti i dispositivi — qualsiasi parola funziona subito, senza registrazioni
-- 🔇 Rimossa la registrazione vocale automatica al cambio parola (i "bip" in sottofondo)
+- 🎙️ Wake word più sensibile (riconosce anche piccole variazioni di pronuncia della parola)
+- 📍 Fix assistente della plancia precedente che restava in ascolto e rispondeva lui
 
 _Dom-IQ BETA_
