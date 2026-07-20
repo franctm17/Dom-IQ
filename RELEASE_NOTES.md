@@ -1,5 +1,5 @@
-## Dom-IQ v1.3.125
+## Dom-IQ v1.3.126
 
-- 📍 Fix definitivo: la wake word ora apre l'assistente sulla plancia che stai davvero guardando, mai su una plancia in background
+- 🎙️ Fix assistente che si apriva ma non si vedeva su mobile (l'overlay veniva chiuso subito da un controllo di visibilità troppo sensibile)
 
 _Dom-IQ BETA_
