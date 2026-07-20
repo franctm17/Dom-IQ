@@ -1,6 +1,5 @@
-## Dom-IQ v1.3.124
+## Dom-IQ v1.3.125
 
-- 🎙️ Wake word più sensibile (riconosce anche piccole variazioni di pronuncia della parola)
-- 📍 Fix assistente della plancia precedente che restava in ascolto e rispondeva lui
+- 📍 Fix definitivo: la wake word ora apre l'assistente sulla plancia che stai davvero guardando, mai su una plancia in background
 
 _Dom-IQ BETA_
