@@ -1,6 +1,6 @@
-## Dom-IQ v1.3.128
+## Dom-IQ v1.3.129
 
-- 🎙️ Fix wake word su mobile: se il riconoscitore del browser non trascrive (app HA), passa automaticamente a Whisper
-- 👁️ Fix assistente che si attivava senza essere visibile: ora viene mostrato sempre sopra la dashboard
+- 🎙️ Wake word più sensibile: ti sente anche da lontano e a voce bassa, senza attivarsi con versi o rumori
+- 🎚️ La "Sensibilità wake" nelle impostazioni ora regola davvero l'ascolto (Alta = massima portata)
 
 _Dom-IQ BETA_
