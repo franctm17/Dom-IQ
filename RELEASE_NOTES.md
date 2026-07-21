@@ -1,6 +1,6 @@
-## Dom-IQ v1.3.129
+## Dom-IQ v1.3.130
 
-- 🎙️ Wake word più sensibile: ti sente anche da lontano e a voce bassa, senza attivarsi con versi o rumori
-- 🎚️ La "Sensibilità wake" nelle impostazioni ora regola davvero l'ascolto (Alta = massima portata)
+- 🛑 Fix schermo blu che copriva Home Assistant dopo aver chiuso l'assistente vocale (bloccava l'app)
+- ⚡ Wake word più reattiva: risponde più in fretta e sente da più lontano
 
 _Dom-IQ BETA_
