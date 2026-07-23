@@ -1,6 +1,5 @@
-## Dom-IQ v1.3.130
+## Dom-IQ v1.3.131
 
-- 🛑 Fix schermo blu che copriva Home Assistant dopo aver chiuso l'assistente vocale (bloccava l'app)
-- ⚡ Wake word più reattiva: risponde più in fretta e sente da più lontano
+- 🤖 Bot Telegram più intelligente: memoria della conversazione ("ora spegnilo") e passaggio automatico all'agente AI quando non capisce (rigenera il pacchetto Dom-IQ Link)
 
 _Dom-IQ BETA_
