@@ -1,5 +1,6 @@
-## Dom-IQ v1.3.131
+## Dom-IQ v1.3.132
 
-- 🤖 Bot Telegram più intelligente: memoria della conversazione ("ora spegnilo") e passaggio automatico all'agente AI quando non capisce (rigenera il pacchetto Dom-IQ Link)
+- 🧠 Fix "ora spegnila/accendila": l'assistente della card ora segue il discorso col pronome attaccato al verbo
+- 🤖 Bot Telegram: se in HA hai un agente AI, diventa il cervello principale (capisce qualsiasi frase, energia, comandi, memoria)
 
 _Dom-IQ BETA_
