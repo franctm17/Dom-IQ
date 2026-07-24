@@ -1,6 +1,5 @@
-## Dom-IQ v1.3.132
+## Dom-IQ v1.3.133
 
-- 🧠 Fix "ora spegnila/accendila": l'assistente della card ora segue il discorso col pronome attaccato al verbo
-- 🤖 Bot Telegram: se in HA hai un agente AI, diventa il cervello principale (capisce qualsiasi frase, energia, comandi, memoria)
+- 🎙️ Wake word: l'impronta vocale ("Impara la mia voce") torna ad essere il motore principale — riconoscimento locale, istantaneo e costante su mobile
 
 _Dom-IQ BETA_
