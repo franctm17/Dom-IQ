@@ -1,6 +1,6 @@
-## Dom-IQ v1.3.135
+## Dom-IQ v1.3.136
 
-- 🔇 Fix assistente vocale che si attivava da solo di continuo su iPhone
-- 🎙️ Wake word più precisa: niente attivazioni su parole simili, rumore o frasi in TV
+- 🔇 Basta attivazioni a vuoto dell'assistente su iPhone: la wake word si ferma da sola quando sente rumore
+- 🎯 Riconoscimento della tua voce che si auto-regola sulla stanza
 
 _Dom-IQ BETA_
