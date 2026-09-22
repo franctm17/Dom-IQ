@@ -1,6 +1,6 @@
-## Dom-IQ v1.3.136
+## Dom-IQ v1.3.137
 
-- 🔇 Basta attivazioni a vuoto dell'assistente su iPhone: la wake word si ferma da sola quando sente rumore
-- 🎯 Riconoscimento della tua voce che si auto-regola sulla stanza
+- 🔔 Fix bip a ripetizione: erano le Notifiche intelligenti, non l'assistente vocale
+- 🔎 Scrivi "diagnostica" all'assistente per vedere da dove arriva ogni bip
 
 _Dom-IQ BETA_
