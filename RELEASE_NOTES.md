@@ -1,6 +1,6 @@
-## Dom-IQ v1.3.138
+## Dom-IQ v1.3.139
 
-- 🔇 Stop ai bip a raffica: il riconoscimento non scambia più i rumori per comandi
-- 🎤 L'assistente si chiude da solo dopo due turni senza capire, invece di riascoltare all'infinito
+- 🔇 Falsi risvegli su iPhone: i freni ora non si azzerano quando la pagina si ricarica
+- ⏹ Dopo troppi risvegli a vuoto la parola di attivazione si spegne e te lo dice
 
 _Dom-IQ BETA_
