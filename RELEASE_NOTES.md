@@ -1,6 +1,11 @@
-## Dom-IQ v1.3.139
+## Dom-IQ v1.3.140
 
-- 🔇 Falsi risvegli su iPhone: i freni ora non si azzerano quando la pagina si ricarica
-- ⏹ Dopo troppi risvegli a vuoto la parola di attivazione si spegne e te lo dice
+- 🔇 Trovata la causa vera dei risvegli casuali: i freni anti-falsi-positivi venivano azzerati dal rumore stesso
+- 🎤 Wake word non più sorda quando il freno si attiva
+- 📱 Android nell'app HA: ora il comando viene capito, non solo la parola di attivazione
+- ⏹ Chiudere l'assistente annulla davvero l'ascolto (prima il comando partiva dopo)
+- 🔁 Eliminato un ciclo che riapriva il microfono ogni 15 secondi e faceva ricaricare la pagina su iPhone
+- 🔐 Licenza: niente più falsi "revocata" quando GitHub limita le richieste
+- 🗣️ Risposta vocale con la stessa prontezza ad ogni avvio
 
 _Dom-IQ BETA_
