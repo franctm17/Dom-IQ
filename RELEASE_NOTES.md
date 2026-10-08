@@ -1,7 +1,7 @@
-## Dom-IQ v1.3.141
+## Dom-IQ v1.3.142
 
-- 🤖 Android nell'app Home Assistant: il comando vocale ora viene capito (prima si attivava e non sentiva)
-- 🎤 Corretto un freno che spegneva la wake word anche quando funzionava
-- ♻️ Dopo ogni aggiornamento la wake word riparte sempre attiva
+- 🗣️ Nuova wake word con il motore di Home Assistant (openWakeWord), lo stesso degli altoparlanti Voice: precisa come Alexa
+- 🎯 Il comando viene catturato dalla stessa pipeline: niente più attivazioni a vuoto
+- ⚙️ Nuova impostazione "Motore wake word" per scegliere fra Home Assistant e la tua impronta
 
 _Dom-IQ BETA_
