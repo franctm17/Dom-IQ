@@ -1,7 +1,6 @@
-## Dom-IQ v1.3.142
+## Dom-IQ v1.3.143
 
-- 🗣️ Nuova wake word con il motore di Home Assistant (openWakeWord), lo stesso degli altoparlanti Voice: precisa come Alexa
-- 🎯 Il comando viene catturato dalla stessa pipeline: niente più attivazioni a vuoto
-- ⚙️ Nuova impostazione "Motore wake word" per scegliere fra Home Assistant e la tua impronta
+- 🩺 Nuovo comando "controllo": l'assistente esamina il tuo impianto e ti dice cosa non funziona, con il rimedio
+- 🔍 Trova le entità rinominate o scomparse, e i dispositivi doppioni di cui uno è morto
 
 _Dom-IQ BETA_
